@@ -1,3 +1,15 @@
+# 0.4.2
+* Fall back to latin-1 encoding for all parsers
+
+# 0.4.1
+* Fall back to latin-1 encoding for EMCBKParser
+
+# 0.4.0
+* Add EMCBKParser and EMINQParser
+
+# 0.3.0
+* Add inquiry parser, INQ02Parser
+
 # 0.2.1
 * Add Python 3 support
 
