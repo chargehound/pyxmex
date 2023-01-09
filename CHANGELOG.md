@@ -1,3 +1,6 @@
+# 0.4.3
+* Parse SE_PROCESS_DATE as Julian day
+
 # 0.4.2
 * Fall back to latin-1 encoding for all parsers
 

@@ -211,6 +211,7 @@ CHARGEBACK_DETAIL_RECORD:
       RANGE: [1859, 1878]
     - NAME: SE_PROCESS_DATE
       RANGE: [1879, 1881]
+      TYPE: julian_day
     - NAME: RETURN_DATE
       RANGE: [1882, 1887]
       TYPE: date(%y%m%d)
