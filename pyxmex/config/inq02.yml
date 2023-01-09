@@ -126,7 +126,7 @@ INQUIRY_DETAIL_RECORD_CASE_TYPE_SPECIFIC:
           RANGE: [937, 957]
         - NAME: SE_PROCESS_DATE
           RANGE: [957, 959]
-          TYPE: julian
+          TYPE: julian_day
         - NAME: IND_FORM_CODE
           RANGE: [1022, 1023]
         - NAME: IND_REF_NUMBER
@@ -162,7 +162,7 @@ INQUIRY_DETAIL_RECORD_CASE_TYPE_SPECIFIC:
           RANGE: [937, 957]
         - NAME: SE_PROCESS_DATE
           RANGE: [957, 959]
-          TYPE: julian
+          TYPE: julian_day
         - NAME: LTA_FIELD_DATE
           RANGE: [960, 965]
           TYPE: date(%y%m%d)
@@ -201,7 +201,7 @@ INQUIRY_DETAIL_RECORD_CASE_TYPE_SPECIFIC:
           RANGE: [937, 957]
         - NAME: SE_PROCESS_DATE
           RANGE: [957, 959]
-          TYPE: julian
+          TYPE: julian_day
         - NAME: RETURN_DATE
           RANGE: [960, 965]
           TYPE: date(%y%m%d)

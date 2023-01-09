@@ -36,6 +36,7 @@ class TypeCaster():
         return {
           'string': lambda raw_value: str(raw_value),
           'julian': self._parse_raw_julian,
+          'julian_day': self._parse_raw_julian_day,
           'date': lambda raw_value: datetime.datetime.strptime(raw_value, '%Y-%m-%d'),
           'numeric': lambda raw_value: int(raw_value),
           'float': lambda raw_value: float(raw_value),
@@ -72,6 +73,14 @@ class TypeCaster():
         days_string = utils.range_from_list(julian_date, 4, 6)
         adjusted_days = int(days_string) - 1 # adjust because we are already counting the first day of the year
         return year + datetime.timedelta(days=adjusted_days)
+
+    @staticmethod
+    def _parse_raw_julian_day(julian_day):
+        """Parse a julian formatted day. We don't know the year.
+        Return a string with the month/day."""
+        days_string = utils.range_from_list(julian_day, 0, 3)
+        adjusted_days = int(days_string) - 1 # adjust because we are already counting the first day of the year
+        return (datetime.date.min + datetime.timedelta(days=adjusted_days)).strftime("%m/%d")
 
     @classmethod
     def _parse_raw_decimal(self, amex_decimal):
