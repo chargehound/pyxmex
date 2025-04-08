@@ -8,3 +8,4 @@ on:
 jobs:
   dependency-review:
     uses: chargehound/security-workflows-public/.github/workflows/dependency-review.yml@main
+    
